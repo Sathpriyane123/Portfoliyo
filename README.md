@@ -1,6 +1,6 @@
-# portfolio
+# portfolio Sathpriyan E
 
-![Screenshot 2024-05-13 154122](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/b8c6f5fc-bd98-4603-952c-39fb0a31f18f)
+![Screenshot 2024-05-23 120534](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/9758afe7-37a2-4d51-a92e-90cd5ab1ef55)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -18,11 +18,10 @@ sathpryan protfoliyo
 
 ## Features
 
-- *User Authentication:*
-  - Sign up and log in securely to access personalized content.
-  
-- *Gym Membership Page:*
-  - Easily sign up for gym memberships through a dedicated page.
+
+- *HOME*
+  ![Screenshot 2024-05-23 120534](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/0310621a-eb4c-428e-babf-bc04413db48a)
+
 
 - *Workout Tracking:*
   - Dynamically track and display workout details on the user's profile page.
@@ -35,17 +34,17 @@ sathpryan protfoliyo
 
 ## Screenshots
 
-![Screenshot (64)](https://github.com/nidalsj/OneFitness/assets/92546712/ca7c8476-8c8d-4230-9f2c-d8f69a3f95a0)
-Caption: Sign up securely to access personalized content.
+![Screenshot 2024-05-23 120552](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/00e30065-b448-49e1-b346-964e5a11be89)
+Caption: Home page.
 
-![Screenshot (67)](https://github.com/nidalsj/OneFitness/assets/92546712/c44ebf92-ecde-4f85-a7b0-3aca1caeaf1c)
-Caption: Dynamically track and display workout details.
+![Screenshot 2024-05-23 120616](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/dcbe140e-bb30-4695-bc0f-4c5e65d49195)
+Caption: ABOUT.
 
-![Screenshot (65)](https://github.com/nidalsj/OneFitness/assets/92546712/f97203e4-42bd-40e8-8034-23ff5347700b)
-Caption: Dynamic Image Gallery Page.
+![Screenshot 2024-05-23 120743](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/91dece56-7449-464d-a9e3-83a253a8d13b)
+Caption: PORTFOLIO.
 
-![Screenshot (68)](https://github.com/nidalsj/OneFitness/assets/92546712/6af7f7dd-32f1-4320-ac1c-d6cff509df62)
-Caption: Profile Page.
+![Screenshot 2024-05-23 120759](https://github.com/Sathpriyane123/Portfoliyo/assets/82439461/77faf0f7-610c-4201-8dbf-f2a0e6066545)
+Caption: PROJECTS.
 
 
 ## Technologies Used
@@ -56,7 +55,7 @@ Caption: Profile Page.
 - CSS
 - Bootstrap
 - JavaScript
-- SQLite3 Database
+- MYSQL Database
 - VS Code IDE
 - GIT Version Cotrol
 
@@ -64,7 +63,6 @@ Caption: Profile Page.
 
 1. Clone the repository.
    bash
-   git clone https://github.com/nidalsj/OneFitness.git
 
 2. Install dependencies.
    bash
@@ -93,4 +91,4 @@ Enable users to engage in real-time chat with trainers for instant assistance an
 
 ## Contact
 
-For any inquiries, feel free to reach out to me at connectnidalsj@gmail.com
+For any inquiries, feel free to reach out to me at sathpriyaneshaji@gmail.com
