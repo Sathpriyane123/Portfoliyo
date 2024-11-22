@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
     <title>Sathpriyan Portfolio</title>
     <style>
-        .ct{
+        .ct {
             text-align: justify;
             margin-left: 25%;
         }
@@ -16,14 +17,15 @@
     <!-- font icons -->
     <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
     <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="{% static 'css/meyawo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/meyawo.css' %}">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">SATHPRIYAN E</a>         
+            <a class="logo" href="#">SATHPRIYAN E</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -35,10 +37,7 @@
                     <a class="link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Blog</a>
+                    <a class="link" href="#skill">Skill</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -46,26 +45,92 @@
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                    <div class="hamburger-inner"></div>
                 </div>
             </a>
-        </div>          
+        </div>
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
+    <!-- Page Header -->
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Sathpriyan E</span>
+                <span class="up animate-up">HI!</span>
+                <span class="down animate-down">I am Sathpriyan E</span>
             </h1>
-            <p class="header-subtitle">FULL STACK DEVELOPER</p>            
+            <p class="header-subtitle animate-fade">FULL STACK DEVELOPER</p>
 
             <a href=""><button class="btn btn-primary">Visit My Works</button></a>
-        </div>              
-    </header><!-- end of page header -->
+        </div>
+    </header>
 
+    <style>
+        /* Animation Keyframes */
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Applying Animations */
+        .animate-up {
+            animation: slide-up 1.5s ease-out;
+        }
+
+        .animate-down {
+            animation: slide-down 1.5s ease-out;
+        }
+
+        .animate-fade {
+            animation: fade-in 2s ease-in-out;
+        }
+
+        /* Additional Styling for Visibility */
+        .header-title {
+            font-size: 2.5rem;
+            color: blueviolet;
+            text-align: center;
+            margin: 0;
+        }
+
+        .header-subtitle {
+            font-size: 1.5rem;
+            color: blueviolet;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+    <!-- End of Page Header -->
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
@@ -73,27 +138,48 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="{% static 'imgs/myphoto.jpg' %}" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="{% static 'imgs/myphoto.jpg' %}" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        Hey there! I'm Sathpriyan E, a dedicated software developer with a knack for turning ideas into reality through clean, efficient code. With 6 MONTH at Doctosmart Enterprice pvt at cyber park calicut of experience in the tech industry, I've cultivated a deep passion for crafting seamless digital experiences and solving complex problems with innovative solutions.
+                        Hey there! I'm Sathpriyan E, a dedicated software developer with a knack for turning ideas into
+                        reality through clean, efficient code. With 6 MONTH at Doctosmart Enterprice pvt at cyber park
+                        calicut of experience in the tech industry, I've cultivated a deep passion for crafting seamless
+                        digital experiences and solving complex problems with innovative solutions.
 
-                            My journey into the world of coding began with a curiosity for technology and a desire to create meaningful impact. Through years of hands-on experience and continuous learning, I've become proficient in a variety of programming languages and frameworks, including HTML, CSS, JAVASCRIPT, MYSQL, DJANGO, PYTHON, REACT.<br>
+                        My journey into the world of coding began with a curiosity for technology and a desire to create
+                        meaningful impact. Through years of hands-on experience and continuous learning, I've become
+                        proficient in a variety of programming languages and frameworks, including HTML, CSS,
+                        JAVASCRIPT, MYSQL, DJANGO, PYTHON, REACT.<br>
 
-                            During my career, I've had the opportunity to work on a diverse range of projects, from developing scalable web applications to designing robust backend systems. I take pride in my ability to collaborate effectively with cross-functional teams, communicate technical concepts clearly, and adapt to evolving project requirements.<br>
+                        During my career, I've had the opportunity to work on a diverse range of projects, from
+                        developing scalable web applications to designing robust backend systems. I take pride in my
+                        ability to collaborate effectively with cross-functional teams, communicate technical concepts
+                        clearly, and adapt to evolving project requirements.<br>
 
-                            What sets me apart is my commitment to writing clean, maintainable code that not only meets functional requirements but also adheres to best practices and industry standards. Whether it's optimizing performance, debugging intricate issues, or implementing new features, I approach every challenge with a meticulous attention to detail and a focus on delivering high-quality results.<br>
+                        What sets me apart is my commitment to writing clean, maintainable code that not only meets
+                        functional requirements but also adheres to best practices and industry standards. Whether it's
+                        optimizing performance, debugging intricate issues, or implementing new features, I approach
+                        every challenge with a meticulous attention to detail and a focus on delivering high-quality
+                        results.<br>
 
-                            Beyond coding, I'm passionate about staying abreast of emerging technologies and trends in the ever-evolving tech landscape. I thrive in dynamic environments where innovation is encouraged, and I'm always eager to explore new tools and methodologies to enhance my skill set.<br>
+                        Beyond coding, I'm passionate about staying abreast of emerging technologies and trends in the
+                        ever-evolving tech landscape. I thrive in dynamic environments where innovation is encouraged,
+                        and I'm always eager to explore new tools and methodologies to enhance my skill set.<br>
 
-                            Outside of coding, you can often find me tinkering with new side projects, contributing to open-source communities, or sharing insights and experiences through tech meetups and forums.<br><br>I'm excited about the opportunity to collaborate on cutting-edge projects and contribute to the future of technology. Let's connect and explore how we can work together to bring ideas to life in the digital realm!<br><br>Thanks for stopping by, and I look forward to connecting with you!
+                        Outside of coding, you can often find me tinkering with new side projects, contributing to
+                        open-source communities, or sharing insights and experiences through tech meetups and
+                        forums.<br><br>I'm excited about the opportunity to collaborate on cutting-edge projects and
+                        contribute to the future of technology. Let's connect and explore how we can work together to
+                        bring ideas to life in the digital realm!<br><br>Thanks for stopping by, and I look forward to
+                        connecting with you!
 
                     </p>
                     <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-                </div>              
+                </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
@@ -108,36 +194,48 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="{% static 'imgs/pencil-case.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="{% static 'imgs/pencil-case.svg' %}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
                             <h6 class="title">DESINNER</h6>
-                            <p class="subtitle"></p>
+                            <p class="subtitle">Showcasing creativity, passion, and innovative designs that bring ideas
+                                to life.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="{% static 'imgs/responsive.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="{% static 'imgs/responsive.svg' %}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
                             <h6 class="title">WEB DEVELOPING</h6>
-                            <p class="subtitle"></p>
+                            <p class="subtitle">Crafting responsive, user-friendly websites with modern technologies and
+                                clean code.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="{% static 'imgs/toolbox.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="{% static 'imgs/toolbox.svg' %}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
                             <h6 class="title">BACKEND DEVELOPING</h6>
-                            <p class="subtitle"></p>
+                            <p class="subtitle">Building robust, secure, and scalable server-side solutions to power
+                                seamless applications.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="{% static 'imgs/analytics.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="{% static 'imgs/analytics.svg' %}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
                             <h6 class="title">FREELANCE WORK</h6>
-                            <p class="subtitle"></p>
+                            <p class="subtitle">Delivering personalized solutions and quality projects tailored to
+                                client needs.</p>
                         </div>
                     </div>
                 </div>
@@ -154,35 +252,40 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="{% static 'imgs/folio-1.jpg' %}" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img src="{% static 'imgs/folio-1.jpg' %}" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Clinical management </h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                     
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{% static 'imgs/folio-2.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="portfolio-card-img" src="{% static 'imgs/folio-2.jpg' %}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Hospital managment</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                         
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="{% static 'imgs/folio-3.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img class="portfolio-card-img" src="{% static 'imgs/folio-3.jpg' %}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Docto CRM</h5>
-                                <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>                         
-                        </span>                     
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
                     </a>
                 </div>
             </div><!-- end of row -->
@@ -199,7 +302,8 @@
                     <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href=""></a><button id="sendButton" class="btn btn-lg my-font btn-light rounded">Hire Me</button></a>
+                    <a href=""></a><button id="sendButton" class="btn btn-lg my-font btn-light rounded">Hire
+                        Me</button></a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -208,7 +312,7 @@
     <!-- testimonial section -->
     <section class="section" id="testmonial">
         <div class="container text-center">
-            <p class="section-subtitle">What Think partners in project  ?</p>
+            <p class="section-subtitle">What Think partners in project ?</p>
             <h6 class="section-title mb-6">Team members</h6>
 
             <!-- row -->
@@ -216,10 +320,12 @@
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="{% static 'imgs/avatar2.jpg' %}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
+                            <img src="{% static 'imgs/avatar2.jpg' %}" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">particpates in live project in team as backend developer</p>
+                            <p class="testimonial-card-subtitle">particpates in live project in team as backend
+                                developer</p>
                             <h6 class="testimonial-card-title">vyshak</h6>
                         </div>
                     </div>
@@ -227,10 +333,12 @@
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="{%  static 'imgs/avatar3.jpg' %}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                            <img src="{%  static 'imgs/avatar3.jpg' %}" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Participate as project coordinator and frontend developer</p>
+                            <p class="testimonial-card-subtitle">Participate as project coordinator and frontend
+                                developer</p>
                             <h6 class="testimonial-card-title">Neha joy</h6>
                         </div>
                     </div>
@@ -238,58 +346,217 @@
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of testimonial section -->
-    
-    <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">Recent Posts?</p>
-            <h6 class="section-title mb-6">Blog</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="{% static 'imgs/img-1.jpg' %}" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+    <!-- Skill Section -->
+    <section class="section" id="skill">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container" id="skills-container">
+            <!-- Skill Items -->
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%;"></div>
+                    <span class="skill-percentage">0%</span>
                 </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">WORKING CYBER PARK Calicut</h6>
+            </div>
 
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                        <a href="#"><i class="ti-comment"></i> 123</a>
-                    </p>
-                    <p>L</p>
-
-                    <p><b>Ne</b></p>
-                    <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%;"></div>
+                    <span class="skill-percentage">0%</span>
                 </div>
-            </div><!-- end of blog wrapper -->
+            </div>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="{% static 'imgs/img-2.jpg' %}" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%;"></div>
+                    <span class="skill-percentage">0%</span>
                 </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo</h6>
+            </div>
 
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                        <a href="#"><i class="ti-comment"></i> 264</a>
-                    </p>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+            <div class="skill">
+                <span class="skill-name">Django</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%;"></div>
+                    <span class="skill-percentage">0%</span>
                 </div>
-            </div><!-- end of blog wrapper -->
+            </div>
 
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
+            <div class="skill">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%;"></div>
+                    <span class="skill-percentage">0%</span>
+                </div>
+            </div>
 
+            <div class="skill">
+                <span class="skill-name">Tailwind CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%;"></div>
+                    <span class="skill-percentage">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const skillsContainer = document.getElementById("skills-container");
+            const skills = document.querySelectorAll(".skill");
+
+            // Scroll animation
+            let scrollDirection = 1; // 1 for down, -1 for up
+            const scrollInterval = 50; // Scroll step in milliseconds
+            const scrollStep = 1; // Pixels to scroll per interval
+
+            // Auto-scroll function
+            const autoScroll = () => {
+                const maxScrollTop = skillsContainer.scrollHeight - skillsContainer.clientHeight;
+
+                if (skillsContainer.scrollTop >= maxScrollTop) {
+                    scrollDirection = -1; // Change direction to up
+                } else if (skillsContainer.scrollTop <= 0) {
+                    scrollDirection = 1; // Change direction to down
+                }
+
+                skillsContainer.scrollTop += scrollStep * scrollDirection;
+            };
+
+            // Start auto-scroll
+            setInterval(autoScroll, scrollInterval);
+
+            // Percentage and bar animations
+            skills.forEach(skill => {
+                const progress = skill.querySelector(".skill-progress");
+                const percentage = skill.querySelector(".skill-percentage");
+                const target = parseInt(progress.style.getPropertyValue("--progress"));
+
+                let currentPercentage = 0;
+                const duration = 2000; // Total animation time in ms
+                const intervalTime = 20; // Update interval in ms
+                const incrementValue = target / (duration / intervalTime);
+
+                const increment = () => {
+                    if (currentPercentage < target) {
+                        currentPercentage = Math.min(currentPercentage + incrementValue, target);
+                        percentage.textContent = `${Math.floor(currentPercentage)}%`;
+                    }
+                };
+
+                setTimeout(() => {
+                    progress.style.transition = `width ${duration}ms ease-in-out`;
+                    progress.style.width = progress.style.getPropertyValue("--progress");
+                    const interval = setInterval(() => {
+                        increment();
+                        if (currentPercentage >= target) {
+                            clearInterval(interval);
+                        }
+                    }, intervalTime);
+                }, 500);
+            });
+        });
+    </script>
+    <style>
+        /* Section Styling */
+        .section {
+            padding: 2rem;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            overflow-y: auto;
+            max-height: 400px;
+            /* Set maximum height for scrollable area */
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            scroll-behavior: smooth;
+            /* Smooth scrolling for animations */
+        }
+
+        .skill {
+            width: 100%;
+            /* Equal width for all skill items */
+            text-align: left;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        .skill-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 20px;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            width: 0%;
+            border-radius: 10px;
+            position: relative;
+            animation: growSkill 2s ease-in-out forwards;
+            box-shadow: 0px 0px 8px rgba(39, 117, 252, 0.5);
+        }
+
+        .skill-percentage {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        @keyframes growSkill {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: var(--progress);
+            }
+        }
+
+        /* Hide scrollbar for modern browsers */
+        .skills-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .skills-container {
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
@@ -298,56 +565,66 @@
 
             <br>
             <div class="ct">
-            <h6>Contact no: 8589866959</h6>
-            <h6>Email:<a href="#">sathpriyaneshaji@gmail.com</a></h6>
-            <h6>Address: Santhimandiram ho , Naduvulattu Paramba<br>Vengeri PO, Calicut<br> Kerala pin:673010<br> India</h6>
+                <h6>Contact no: 8589866959</h6>
+                <h6>Email:<a href="#">sathpriyaneshaji@gmail.com</a></h6>
+                <h6>Address: Santhimandiram ho , Naduvulattu Paramba<br>Vengeri PO, Calicut<br> Kerala pin:673010<br>
+                    India</h6>
             </div><br><br>
             <!-- contact form -->
             <form action="contact" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
                 {% csrf_token %}
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>                 
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" name="email" requried>                 
+                        <input type="email" class="form-control" placeholder="Enter Email" name="email" requried>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea  id="comment" rows="6"   class="form-control" placeholder="Write Something" name="description"></textarea>
+                        <textarea id="comment" rows="6" class="form-control" placeholder="Write Something"
+                            name="description"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                        {{key}}                 
+                        {{key}}
                     </div>
-                </div>  
+                </div>
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
-        <footer class="footer">       
+        <footer class="footer">
+            <!-- Add this in the <head> section of your HTML -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+            <!-- Social Links Section -->
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+                <a href="https://github.com/Sathpriyane123" class="link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_priyan__77/" class="link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sathpriyan-e-248907225/" class="link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
-	
-	<!-- core  -->
+
+    <!-- core  -->
     <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
     <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
 
     <!-- Meyawo js -->
     <script src="{% static 'js/meyawo.js' %}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+
 </body>
+
 </html>
