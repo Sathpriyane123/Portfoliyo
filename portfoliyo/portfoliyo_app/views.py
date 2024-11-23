@@ -35,5 +35,5 @@ def contact(request):
         # Render the success message
         return render(request, 'index1.html', {'message': 'Your message has been sent successfully!'})
 
-    return render(request,'index1.html')
+    return render(request,'index1.html',{'google_maps_api_key': settings.GOOGLE_MAPS_API_KEY})
 
