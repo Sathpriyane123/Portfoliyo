@@ -11,6 +11,8 @@ env/
 
 # Ignore database files
 *.sqlite3
+db.sqlite3
+
 
 # Ignore IDE/project files
 .vscode/
